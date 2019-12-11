@@ -20,12 +20,11 @@ collections:
     folder: "collections/_prato-do-dia"
     create: true
     fields:
-      - {label: "Imagem", name: "image", widget: "image"}
       - {label: "Titulo", name: "title", widget: "string"}
+      - {label: "Imagem", name: "image", widget: "image"}
       - {label: "Dia da Semana", name: "publish-day", widget: "string"}
-      - {label: "Prado do Dia", name: "publish", widget: "boolean", required: false}
+      - {label: "Prado do Dia", name: "publish", widget: "boolean", default: "false"}
       - {label: "Preço", name: "price", widget: "number", valueType: "float"}
-      - {label: "Descrição", name: "body", widget: "markdown", pattern: "Ingredientes da receita", required: false}
 
   - label: "Menu"
     name: "menu"
