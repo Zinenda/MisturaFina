@@ -1,0 +1,13 @@
+{% for item in paginator.posts %}
+    <div id="Modal-{{ item.title }}" class="modal">
+        <div class="container">
+            <div class="modal-content">
+                <h4 class="bolder underline">{{ item.title }}</h4>
+
+                <div class="light justify">
+                    {{ item.content }}
+                </div>
+            </div>
+        </div>
+    </div>
+{% endfor %}

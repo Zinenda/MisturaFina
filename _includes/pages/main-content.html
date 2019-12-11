@@ -1,0 +1,35 @@
+<section class="section">
+    <div class="container">
+        <div class="section-grid">
+            {% for item in paginator.posts %}
+                <article class="card hoverable z-depth-5">
+                    <div class="card-image">
+                        <img data-src="{{ item.image }}" alt="{{ item.title }}" class="lazy materialboxed" data-caption="{{ site.title }}">
+                    </div>
+
+                    <div class="card-content">
+                        {% if page.title == "Prato do Dia" %}
+                            <p class="bolder">{{ item.publish-day}}</p>
+                        {% endif %}
+
+                        <span class="card-title underline">{{ item.title }}</span>
+                        <em class="light">{{ item.price }} MT</em>
+                        <hr>
+                        
+                        {% if page.title == "Prato do Dia" %}
+                            {% if item.publish }
+                                <a href="" class="btn waves-effect waves-light">Quero!</a>
+                            {% endif %}
+                            {% else %}
+                                <a href="" class="btn waves-effect waves-light">Quero!</a>
+                        {% endif %}
+
+                        <a href="#Modal-{{ item.title }}" class="btn-flat waves-effect waves-light modal-trigger">Saiba Mais</a>
+                    </div>
+                </article>
+            {% endfor %}
+        </div>
+
+        {% include pages/pagination.html %}
+    </div>
+</section>

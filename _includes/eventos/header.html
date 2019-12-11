@@ -1,0 +1,15 @@
+<style>
+    #evento-header {
+        background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url({{ page.image-cover }});
+    }
+</style>
+
+<header id="evento-header" class="page-header">
+    <div class="container">
+        <h1 class="bolder hide-on-med-on-and-down">{{ page.title }}</h1>
+        <h4 class="bolder hide-on-med-on-and-down">{{ page.title }}</h4>
+
+        <a href="#modal-evento-{{ page.title }}" class="btn modal-trigger waves-effect waves-light">Detalhes do Evento</a>
+        <a href="#evento-gallery" class="btn-flat waves-effect waves-light">Aprecie Fotos</a>
+    </div>
+</header>

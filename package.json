@@ -1,0 +1,11 @@
+{
+  "name": "MisturaFina",
+  "version": "1.0.0",
+  "description": "Restaurante e Bar",
+  "main": "index.js",
+  "author": "Ivo Zinenda",
+  "license": "MIT",
+  "dependencies": {
+    "materialize-css": "^1.0.0-rc.2"
+  }
+}

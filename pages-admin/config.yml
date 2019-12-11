@@ -1,0 +1,26 @@
+backend:
+  name: git-gateway
+  use_large_media_transforms_in_media_library: false
+
+media_folder: 'assets/uploads'
+
+logo_url: 'https://d33wubrfki0l68.cloudfront.net/f1afd154dd1bd09e6957dce7291bfc56834b4489/b2edb/assets/img/brand/logo.svg'
+
+collections:
+  - label: "Paginas de Pratos"
+    name: "pages"
+    folder: "_pages"
+    create: true
+    fields:
+      - {label: "Titulo da Pagina", name: "title", widget: "string"}
+      - {label: "Background da Pagina", name: "image-cover", widget: "image"}
+      - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
+      - label: "Paginação"
+        name: "pagination"
+        widget: "object"
+          - {label: "Activação", name: "enabled", widget: "boolean", default: "true"}
+          - {label: "Collecção", name: "collection", widget: "string", default: "menu"}  
+          - label: "Tipos de Pratos"
+            name: "category"
+            widget: "select"
+            options: ["Entradas", "Bebidas", "Pratos", "Pizzas"]

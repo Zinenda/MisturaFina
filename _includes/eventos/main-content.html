@@ -1,0 +1,11 @@
+<section class="container">
+    <div class="masonry">
+        {% for item in page.image reversed %}
+            <div class="item">
+                <a data-href="{{ item }}" data-lightbox="{{ page.title }}" class="lazy">
+                    <img data-src="{{ item }}" alt="{{ page.title }}" class="lazy">
+                </a>
+            </div>
+        {% endfor %}
+    </div>
+</section>

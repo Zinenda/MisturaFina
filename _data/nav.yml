@@ -1,0 +1,28 @@
+- link: /
+  title: "Ínicio"
+  icon: home
+
+- link: entradas/
+  title: Entradas
+  icon: cheese
+
+- link: bebidas/
+  title: Bebidas
+  icon: cocktail
+
+- link: pratos/
+  title: Pratos Principais
+  icon: drumstick-bite
+
+- link: pizzas/
+  title: Pizzas
+  icon: pizza-slice
+
+- link: eventos/
+  title: Eventos
+  icon: microphone
+
+- link: "#localizacao"
+  title: Localização
+  icon: map-marker-alt
+  modal: true
