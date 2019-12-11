@@ -4,71 +4,49 @@
             <!-- Prato do Dia -->
             {% for item in site.prato-do-dia %}
                 {% if item.publish %}
-                    <div class="card hoverable z-depth-5">
-                        <div class="card-image">
-                            <img src="" alt="">
-                        </div>
-            
-                        <div class="card-content text-justified">
-                            <span class="card-title underline bold">Prato do Dia</span>
-            
-                            <p>{{ item.title }}</p>
-            
-                            <div class="light">
-                                {{ item.content }}
-                            </div>
-                        </div>
-            
-                        <div class="card-action">
-                            <a href="" class="btn waves-effect waves-light">Faça sua Reserva</a>
-                            <a href="prato-do-dia/" class="btn-flat waves-effect waves-light">Veja Mais</a>
-                        </div>
-                    </div>
+                    <article class="card-panel hoverable">
+                        <img src="{{ item.image }}?nf_resize=fit&w=200" alt="{{ item.title }}" class="materialboxed">
+                        <p class="bolder">{{ item.title }}</p>
+                        <p class="light">{{ item.price }} MT</p>
+                        <p>Prato da {{ item.publish-day }}</p>
+                        {% if item.publish %}
+                            <div class="divider"></div>
+                            <a href="" class="btn-flat waves-effect waves-light white-text">Reserve Já!</a>
+                        {% endif %}
+                    </article>
                 {% endif %}
             {% endfor %}
             <!-- Fim Prato do Dia -->
 
             <!-- Eventos da Semana -->
             {% for item in site.eventos-da-semana limit: 1 %}
-                <div class="card hoverable z-depth-5">
-                    <div class="card-image">
-                        <img src="" alt="">
-                    </div>
+                <div class="card-panel hoverable">
+                    <img src="{{ item.image }}?nf_resize=fit&w=200" alt="{{ item.title }}" class="materialboxed">
+
+                    <p class="bold">Evento da Semana</p>
+                    <p>{{ item.title }}</p>
             
-                    <div class="card-content text-justified">
-                        <span class="card-title underline bold">Evento da Semana</span>
-            
-                        <p>{{ item.title }}</p>
-            
-                        <div class="light">
-                            {{ item.content }}
-                        </div>
-                    </div>
-            
-                    <div class="card-action">
-                        <a href="" class="btn waves-effect waves-light">Faça sua Reserva</a>
-                        <a href="eventos/" class="btn-flat waves-effect waves-light">Veja Mais</a>
-                    </div>
+                    <div class="divider"></div>
+
+                    <a href="" class="btn waves-effect waves-light">Faça sua Reserva</a>
+                    <a href="eventos/" class="btn-flat waves-effect waves-light">Veja Mais</a>
                 </div>
             {% endfor %}
             <!-- Fim Eventos da Semana -->
 
             <!-- Galeria -->
-            <div class="card hoverable z-depth-5">
-                <div class="card-image">
-                    <img src="" alt="">
-                </div>
+            {% for item in site.galeria %}
+                <div class="card-panel hoverable">
+                    <img src="{{ item.image }}?nf_resize=smartcropt&w=200" alt="{{ item.title }}" class="materialboxed">
 
-                <div class="card-content">
-                    <span class="card-title underline">Galeria</span>
+                    <p class="bold">Galeria</p>
+                    <p>{{ item.title }}</p>
+            
+                    <div class="divider"></div>
 
-                    <p class="light">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis nulla minima quos. Soluta cum accusantium iure illo. Delectus ab at natus aut pariatur eligendi sunt laboriosam, enim, cumque amet sit!</p>
+                    <a href="ggaleria/" class="btn-flat waves-effect waves-light">Veja Mais</a>
                 </div>
-
-                <div class="card-action">
-                    <a href="galeria/" class="btn waves-effect waves-light" title="Galeria">Veja Mais</a>
-                </div>
-            </div>
+            {% endfor %}
             <!-- Fim Eventos da Semana -->
         </div>
     </div>
