@@ -1,6 +1,6 @@
 ---
 title: Bife a Portuguesa
-image: /assets/uploads/bitoque-terçafeira.png
+image: /assets/uploads/bife-a-poruguesa.jpeg
 category: Pratos
 price: 850
 ---
