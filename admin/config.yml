@@ -48,13 +48,22 @@ collections:
       - {label: Nome do Evento", name: "title", widget: "string"}
       - {label: "Data", name: "date", widget: "datetime"}
       - {label: "Capa do Evento", name: "image-cover", widget: "image"}
-      - label: "Galeria"
-        name: "gallery"
+
+  - label: "Galeria"
+    name: "galeria"
+    folder: "collections/_galeria"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: Nome do Evento", name: "title", widget: "string"}
+      - {label: "Data", name: "date", widget: "datetime"}
+      - {label: "Capa do Evento", name: "image-cover", widget: "image"}
+      - label: "Fotos"
+        name: "photos"
         widget: "list"
-        fields:
-          - {label: "Imagem", name: "image", widget: "image"}
-      - {label: "Layout", name: "layout", default: "post", widget: "hidden"}
-      - {label: "Descrição", name: "body", widget: "markdown", pattern: "Detalhes dos Eventos"}
+        field: 
+          - {label: "Foto", name: "photo", widget: "image"}
+
 
   #- label: "Posts"
   #  name: "posts"

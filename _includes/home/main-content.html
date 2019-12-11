@@ -22,7 +22,7 @@
             <!-- Eventos da Semana -->
             {% for item in site.eventos-da-semana limit: 1 %}
                 <div class="card-panel hoverable">
-                    <img src="{{ item.image }}?nf_resize=fit&w=200" alt="{{ item.title }}" class="materialboxed">
+                    <img src="{{ item.image-cover }}?nf_resize=fit&w=200" alt="{{ item.title }}" class="materialboxed">
 
                     <p class="bold">Evento da Semana</p>
                     <p>{{ item.title }}</p>
