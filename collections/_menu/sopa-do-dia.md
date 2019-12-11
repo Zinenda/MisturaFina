@@ -1,6 +1,6 @@
 ---
 title: Sopa do Dia
-image: /assets/uploads/receita-de-sopa-de-legumes.jpg
+image: /assets/uploads/soupa.jpg
 category: Entradas
 price: 120
 ---
