@@ -25,4 +25,4 @@ collections:
           - label: "Tipos de Pratos"
             name: "category"
             widget: "select"
-            options: ["Entradas", "Bebidas", "Pratos", "Pizzas"]
+            options: ["Entradas", "Bebidas", "Pratos", "Pizzas", "Saladas", "Sobremesas", "Sandes"]
