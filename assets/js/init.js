@@ -1,10 +1,11 @@
 $(document).ready(function(){
-    $('.sidenav').sidenav();
+	$('.sidenav').sidenav();
     $('.scrollspy').scrollSpy();
     $('.tooltipped').tooltip();
     $('.fixed-action-btn').floatingActionButton();
     $('.modal').modal();
-    $('.materialboxed').materialbox();
+	$('.materialboxed').materialbox();
+	$('.slider').slider();
 
     $('.slick-servicos').slick({
 	dots: true,

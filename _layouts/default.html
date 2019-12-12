@@ -3,7 +3,10 @@
     {% include head.html %}
     
     <body>
-         {% include nav/navbar.html %}
+         {% unless page.layout == "default" %}
+            {% include nav/navbar.html %}
+         {% endunless %}
+         
          {% include nav/sidenav.html %}
 
          <main class="animate-bottom">
@@ -11,7 +14,5 @@
 
              {% include home/prato-do-dia.html %}
          </main>
-
-         {% include footer.html %}
 
          {% include scripts.html %}

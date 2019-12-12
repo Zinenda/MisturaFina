@@ -103,25 +103,10 @@ nav {
     }
 }
 
-#clientes {
-    img {
-        -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-        filter: grayscale(100%);
-        width: 80px;
-    }
-}
-
-.bolder {
-    font-weight: bolder
-}
-
-.bold {
-    font-weight: bold;
-}
-
 // IMPORTED
 @import
     "animate-bottom",
+    "page-header",
     "mygrid",
     "materialize/materialize"
 ;

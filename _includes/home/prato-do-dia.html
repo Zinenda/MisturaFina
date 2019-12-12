@@ -5,7 +5,7 @@
         <div class="section-grid">
             {% for item in site.prato-do-dia %}
                 <article class="card-panel">
-                    <img src="{{ item.image }}?nf_resize=fit&w=200" alt="{{ item.title }}" class="materialboxed">
+                    <img src="{{ item.image }}?nf_resize=fit&w=200" alt="{{ item.title }}" class="materialboxed" data-caption="{{ item.title }}">
                     <p class="bolder">{{ item.title }}</p>
                     <p class="light">{{ item.price }} MT</p>
                     <p>Prato da {{ item.publish-day }}</p>
