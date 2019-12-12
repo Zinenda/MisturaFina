@@ -1,44 +1,16 @@
-{% for item in paginator.posts limit: 1 %}
-    {% if page.title == "Prato do Dia" %}
-        {% if item.publish %}
-            <header class="page-header">
-                <div class="container">
-                    <div class="section-grid">
-                        <article>
-                            <h1 class="bolder underline">Prato do Dia</h1>
+<style>
+    .page-header {
+        background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url({{ page.image-cover }});
+    }
+</style>
 
-                            <h4 class="bold">{{ item.title }}</h4>
-                            <em class="light">{{ item.price }}</em>
-                            <hr>
+<header class="page-header">
+    {% include nav/navbar.html %}
 
-                            <a href="" class="btn waves-effect waves-light">Quero!</a>
-                            <a href="#Modal-{{ item.title }}" class="btn-flat waves-effect waves-light modal-trigger">Detalhes</a>
-                        </article>
-
-                        <img src="{{ item.image }}" alt="{{ item.title }}" class="materialboxed" data-caption="{{ item.title }}">
-                    </div>
-                </div>
-            </header>
-        {% endif %}
-
-        {% else %}
-            <header class="page-header">
-                <div class="container">
-                    <div class="section-grid">
-                        <article>
-                            <h1 class="bolder underline">{{ page.title }}</h1>
-
-                            <h4 class="bold">{{ item.title }}</h4>
-                            <em class="light">{{ item.price }}</em>
-                            <hr>
-
-                            <a href="" class="btn waves-effect waves-light">Quero!</a>
-                            <a href="#Modal-{{ item.title }}" class="btn-flat waves-effect waves-light modal-trigger">Detalhes</a>
-                        </article>
-
-                        <img src="{{ item.image }}" alt="{{ item.title }}" class="materialboxed" data-caption="{{ item.title }}">
-                    </div>
-                </div>
-            </header>
-    {% endif %}
-{% endfor %}
+    <div class="container header-content">
+        <h4>{{ page.title }}</h4>
+        
+        <a href="" class="btn waves-effect waves-light">Encomende Já!</a>
+        <a href="#section" class="btn-flat waves-effect waves-light white-text" style="border: 1px solid #fff;">Veja Mais</a>
+    </div>
+</header>

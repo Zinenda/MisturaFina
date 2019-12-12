@@ -2,7 +2,7 @@ backend:
   name: git-gateway
   use_large_media_transforms_in_media_library: false
 
-media_folder: 'assets/uploads'
+media_folder: 'assets/uploads/pages'
 
 logo_url: 'https://d33wubrfki0l68.cloudfront.net/f1afd154dd1bd09e6957dce7291bfc56834b4489/b2edb/assets/img/brand/logo.svg'
 
@@ -15,6 +15,7 @@ collections:
       - {label: "Titulo da Pagina", name: "title", widget: "string"}
       - {label: "Background da Pagina", name: "image-cover", widget: "image"}
       - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
+      - {label: "Permalink", name: "permalink", widget: "hidden", default: "pretty"}
       - label: "Paginação"
         name: "pagination"
         widget: "object"
