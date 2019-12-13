@@ -15,13 +15,11 @@ collections:
       - {label: "Titulo da Pagina", name: "title", widget: "string"}
       - {label: "Background da Pagina", name: "image-cover", widget: "image"}
       - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
-      - {label: "Permalink", name: "permalink", widget: "hidden", default: "pretty"}
       - label: "Paginação"
         name: "pagination"
         widget: "object"
         fields:
           - {label: "Activação", name: "enabled", widget: "boolean", default: "true"}
-          - {label: "Collecção", name: "collection", widget: "string", default: "menu"}  
           - label: "Tipos de Pratos"
             name: "category"
             widget: "select"
