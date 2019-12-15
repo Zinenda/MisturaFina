@@ -1,0 +1,7 @@
+{% for item in site.data.menu %}
+    <li>
+        <a href="{% unless page.layout == "default" %}/{% endunless %}{{ item.link }}" class="waves-effect waves-light {% if page.url == item.link %}active{% endif %} {% if item.modal %}modal-trigger{% endif %}">
+            <i class="fas fa-{{ item.icon }}"></i> {{ item.title }}
+        </a>
+    </li>
+{% endfor %}

@@ -1,21 +1,13 @@
-<div id="prato-do-dia" class="modal black white-text">
-    <div class="container modal-content">
-        <h5 class="bolder center">Pratos da Semana</h5>
+<div id="prato-do-dia" class="modal black white-text center">
+    <div class="modal-content">
+        <h5 class="bolder">Pratos da Semana</h5>
         
         <div class="section-grid">
             {% for item in site.prato-do-dia %}
-                <article class="card-panel">
-                    <img src="{{ item.image }}?nf_resize=fit&w=250" alt="{{ item.title }}" class="materialboxed" data-caption="{{ item.title }}">
-                    <p class="bolder">{{ item.title }}</p>
-                    <p class="light">{{ item.price }} MT</p>
-                    <p>Prato da {{ item.publish-day }}</p>
-                    {% if item.publish %}
-                        <div class="divider"></div>
-                        <div class="center">
-                            <a href="" class="btn-flat waves-effect waves-light white-text">Reserve Já!</a>
-                        </div>
-                    {% endif %}
-                </article>    
+                {% if item.publish %}
+                    {% continue %}       
+                {% endif %}
+                {% include grid-loop.html %}
             {% endfor %}
         </div>
     </div>

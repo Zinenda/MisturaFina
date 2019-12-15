@@ -1,7 +1,13 @@
-<div class="card-panel hoverable">
-    <img src="{{ item.image }}?nf_resize=fit&w=250" alt="{{ item.title }}" class="lazy materialboxed" data-caption="{{ item.title }}">
+<div class="card-panel hoverable" data-aos="zoom-in" data-aos-duration="3000">
+    <img data-src="{{ item.image }}?nf_resize=fit&w=250" alt="{{ item.title }}" class="lazy materialboxed" data-caption="{{ item.title }}">
     
     <p class="bolder">{% if page.title == "Pizzas" %}Pizza {% endif %}{{ item.title }}</p>
 
-    <a href="" class="btn-flat waves-effect waves-light white-text" style="border: 1px solid #fff;">Encomende Já!</a>
+    {% if page.layout == "default" %}
+        <p class="light">{{ item.publish-day }}</p>
+    {% endif %}
+
+    {% unless page.layout == "default" %}
+        <a href="https://wa.me/258844466768?text=Olá%20Mistura%20Fina!%20Gostaria%20de%20encomendar%20algo" class="btn-flat waves-effect waves-light white-text" style="border: 1px solid #fff;">Encomende Já! <i class="fab fa-whatsapp"></i></a>
+    {% endunless %}
 </div>

@@ -15,8 +15,7 @@ gem "jekyll", "~> 4.0.0"
 # gem "github-pages", group: :jekyll_plugins
 # If you have any plugins, put them here!
 group :jekyll_plugins do
-  gem "jekyll-email-protect" 
-  gem "jekyll-paginate"
+  gem "jekyll-email-protect"
   gem "jekyll-seo-tag"
   gem "jekyll-analytics"
   gem "jekyll-sitemap"

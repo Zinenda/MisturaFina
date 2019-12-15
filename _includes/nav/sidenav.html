@@ -2,9 +2,14 @@
     <a href="/">
         <img src="{{ site.image }}" alt="Logotipo">
     </a>
+
     <div class="divider"></div>
 
     <ul>
+        {% include nav/menu.html %}
+
+        <li class="divider"></li>
+        
         {% include nav/nav.html %}
     </ul>
 </aside>

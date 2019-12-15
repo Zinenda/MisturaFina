@@ -1,0 +1,27 @@
+- link: entradas/
+  title: Entradas
+  icon: cheese
+
+- link: bebidas/
+  title: Bebidas
+  icon: cocktail
+
+- link: sandes/
+  title: Sandes
+  icon: hamburger
+
+- link: pratos-principais/
+  title: Pratos Principais
+  icon: drumstick-bite
+
+- link: pizzas/
+  title: Pizzas
+  icon: pizza-slice
+
+- link: saladas/
+  title: Saladas
+  icon: carrot
+
+- link: sobremesas/
+  title: Sobremesas
+  icon: ice-cream
