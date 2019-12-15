@@ -1,18 +1,11 @@
 <section id="section" class="section scrollspy center">
     <div class="container">
         <div class="section-grid">
-            {% for post in paginator.posts %}
-                <div class="card-panel hoverable">
-                    <img src="{{ post.image }}" alt="{{ post.title }}" class="lazy materialboxed" data-caption="{{ post.title }}">
-                    
-                    <p class="bolder">{{ post.title }}</p>
-
-                    <a href="" class="btn-large waves-effect waves-light">Encomende Já!</a>
-                    <a href="#section" class="btn-flat waves-effect waves-light white-text" style="border: 1px solid #fff;">Veja Mais</a>
-                </div>
+            {% for item in site.menu %}
+                {% if item.category == page.title %}
+                    {% include grid-loop.html %}
+                {% endif %}
             {% endfor %}
         </div>
-
-        {% include pages/pagination.html %}
     </div>
 </section>

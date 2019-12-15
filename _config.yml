@@ -8,7 +8,6 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 collections_dir: collections
 collections:
   menu:
-  pizzas:
   eventos:
   galeria:
   prato-do-dia:
@@ -18,28 +17,16 @@ sass:
   sass_dir: assets/_sass
   style: compressed
 
-plugins:
-  - jekyll-seo-tag
-  - jekyll-paginate-v2
-  - jekyll-email-protect
-  - jekyll-analytics
-
 image: /assets/img/brand/MisturaFinaWhiteLogo.svg
 
-# Pagination Settings
-pagination:
-  enabled: true
-  per_page: 35
-  permalink: '/:num/'
-  title: ':title | :num of :max'
-  limit: 0
-  sort_field: 'date'
-  sort_reverse: true
- # extension: htm
- # indexpage: 'default'
-  trail: 
-    before: 2
-    after: 2
+plugins:
+  - jekyll-paginate
+  - jekyll-email-protect
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-analytics
+
+paginate: 15
 
 # Exclude from processing.
 # The following items will not be processed, by default.
