@@ -7,7 +7,7 @@ media_folder: 'assets/uploads/pages'
 logo_url: 'https://d33wubrfki0l68.cloudfront.net/f1afd154dd1bd09e6957dce7291bfc56834b4489/b2edb/assets/img/brand/logo.svg'
 
 collections:
-  - label: "Paginas de Pratos"
+  - label: "Paginas"
     name: "pages"
     folder: "_pages"
     create: true
@@ -15,12 +15,3 @@ collections:
       - {label: "Titulo da Pagina", name: "title", widget: "string"}
       - {label: "Background da Pagina", name: "image-cover", widget: "image"}
       - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
-      - label: "Paginação"
-        name: "pagination"
-        widget: "object"
-        fields:
-          - {label: "Activação", name: "enabled", widget: "boolean", default: "true"}
-          - label: "Tipos de Pratos"
-            name: "category"
-            widget: "select"
-            options: ["Entradas", "Bebidas", "Pratos", "Pizzas", "Saladas", "Sobremesas", "Sandes"]
