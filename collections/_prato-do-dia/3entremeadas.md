@@ -1,7 +1,8 @@
 ---
-image: "/assets/uploads/entremeadas-quinta-feira.png"
 title: Entremeadas
+image: /assets/uploads/entremeadas-quinta-feira.png
 publish-day: Quinta-Feira
-publish: true
+publish: false
 price: 450
 ---
+
