@@ -1,9 +1,8 @@
 ---
-image: "/assets/uploads/bitoque-terçafeira.png"
 title: Bitoque
+image: /assets/uploads/bitoque-terçafeira.png
 publish-day: Terça-Feira
-publish: false
+publish: true
 price: 450
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere iusto sed corrupti voluptas quam in, ullam neque rem, sapiente consequatur distinctio deserunt voluptatem eius velit quis enim, veniam adipisci quibusdam!
