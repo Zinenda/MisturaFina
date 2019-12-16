@@ -2,7 +2,7 @@
   title: Eventos
   icon: microphone
 
-- link: "#localizacao"
-  title: Localização
-  icon: map-marker-alt
+- link: "#contactos"
+  title: Contacte-nos
+  icon: envelope
   modal: true

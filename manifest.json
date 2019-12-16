@@ -1,5 +1,11 @@
 {
  "name": "Mistura Fina",
+ "short_name": "MF",
+ "theme_color": "#000000",
+ "background_color": "#000000",
+ "display": "standalone",
+ "scope": "/",
+ "start_url": "/",
  "icons": [
   {
    "src": "\/assets/img/brand/favicons/android-icon-36x36.png",

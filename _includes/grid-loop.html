@@ -5,6 +5,8 @@
     
     <p class="bolder">{% if page.title == "Pizzas" %}Pizza {% endif %}{{ item.title }}</p>
 
+    <p class="italic">{{ item.price }}</p>
+
     {% if page.layout == "default" %}
         <p class="light">{{ item.publish-day }}</p>
     {% endif %}
