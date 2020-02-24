@@ -1,5 +1,5 @@
-<section class="section">
-    <h4 class="bolder">Pratos da Semana</h4>
+<section class="section hide-on-med-and-down">
+    <h4 class="bolder section">Pratos da Semana</h4>
     
     <div class="section-grid section">
         {% for item in site.prato-do-dia %}
@@ -12,5 +12,40 @@
                 </div>
             </div>
         {% endfor %}
+    </div>
+</section>
+
+<section class="section hide-on-large-only" style="padding-top: 50%;">
+    <br>
+    <h5 class="bolder section">Pratos da Semana</h5>
+    
+    <div class="section-grid section">
+        {% for item in site.prato-do-dia limit: 2 %}
+            <div class="pratos-container">
+                <img data-src="{{ item.image }}?nf_resize=fit&w=300" alt="{{ item.title }}" class="lazy">
+                <div class="text">
+                    <p class="light">Prato da {{ item.publish-day }}</p>
+                    <p class="bolder">{{ item.title }}</p>
+                    <p>{{ item.price }} MT</p>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+
+    <div id="prato-do-dia" class="modal black">
+        <div class="container modal-content">
+            <div class="section-grid section">
+                {% for item in site.prato-do-dia offset: 2 %}
+                    <div class="pratos-container">
+                        <img data-src="{{ item.image }}?nf_resize=fit&w=300" alt="{{ item.title }}" class="lazy">
+                        <div class="text">
+                            <p class="light">Prato da {{ item.publish-day }}</p>
+                            <p class="bolder">{{ item.title }}</p>
+                            <p>{{ item.price }} MT</p>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
     </div>
 </section>
