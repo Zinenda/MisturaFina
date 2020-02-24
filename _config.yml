@@ -20,10 +20,8 @@ sass:
 image: /assets/img/brand/MisturaFinaWhiteLogo.svg
 
 plugins:
-  - jekyll-email-protect
   - jekyll-seo-tag
   - jekyll-sitemap
-  - jekyll-analytics
 
 # Exclude from processing.
 # The following items will not be processed, by default.

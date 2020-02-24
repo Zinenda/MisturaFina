@@ -88,15 +88,11 @@ footer {
     color: $primary-color;
 }
 
-.waves-effect.waves-primary .waves-ripple {
-    background-color: rgba(141, 3, 42, 0.65);
-}
-
 nav {
     .nav-wrapper {
         a.brand-logo {
             svg {
-                height: 60px;
+                height: 50px;
                 padding-top: 10px;
             }
         }
@@ -108,5 +104,6 @@ nav {
     "animate-bottom",
     "page-header",
     "mygrid",
-    "materialize/materialize"
+    "materialize/materialize",
+    "image-opacity"
 ;

@@ -1,54 +1,16 @@
 <section class="section">
-    <div class="container">
-        <div class="section-grid">
-            <!-- Prato do Dia -->
-            {% for item in site.prato-do-dia %}
-                {% if item.publish %}
-                    <article class="card-panel hoverable">
-                        <img src="{{ item.image }}?nf_resize=fit&w=200" alt="{{ item.title }}" class="materialboxed">
-                        <p class="bolder">{{ item.title }}</p>
-                        <p class="light">{{ item.price }} MT</p>
-                        <p>Prato da {{ item.publish-day }}</p>
-                        {% if item.publish %}
-                            <div class="divider"></div>
-                            <a href="" class="btn waves-effect waves-light">Reserve Já!</a>
-                            <a href="#prato-do-dia" class="btn-flat waves-effect waves-light white-text modal-trigger" style="border: 1px solid #fff">Veja Mais</a>
-                        {% endif %}
-                    </article>
-                {% endif %}
-            {% endfor %}
-            <!-- Fim Prato do Dia -->
-
-            <!-- Eventos da Semana -->
-            {% for item in site.eventos limit: 1 %}
-                <div class="card-panel hoverable">
-                    <img src="{{ item.image-cover }}?nf_resize=fit&w=200" alt="{{ item.title }}" class="materialboxed">
-
-                    <p class="bold">Evento da Semana</p>
-                    <p>{{ item.title }}</p>
-            
-                    <div class="divider"></div>
-
-                    <a href="" class="btn waves-effect waves-light">Faça sua Reserva</a>
-                    <a href="eventos/" class="btn-flat waves-effect waves-light">Veja Mais</a>
+    <h4 class="bolder">Pratos da Semana</h4>
+    
+    <div class="section-grid section">
+        {% for item in site.prato-do-dia %}
+            <div class="pratos-container">
+                <img data-src="{{ item.image }}?nf_resize=fit&w=300" alt="{{ item.title }}" class="lazy">
+                <div class="text">
+                    <p class="light">Prato da {{ item.publish-day }}</p>
+                    <p class="bolder">{{ item.title }}</p>
+                    <p>{{ item.price }} MT</p>
                 </div>
-            {% endfor %}
-            <!-- Fim Eventos da Semana -->
-
-            <!-- Galeria -->
-            {% for item in site.galeria %}
-                <div class="card-panel hoverable">
-                    <img src="{{ item.image }}?nf_resize=smartcropt&w=200" alt="{{ item.title }}" class="materialboxed">
-
-                    <p class="bold">Galeria</p>
-                    <p>{{ item.title }}</p>
-            
-                    <div class="divider"></div>
-
-                    <a href="galeria/" class="btn-flat waves-effect waves-light">Veja Mais</a>
-                </div>
-            {% endfor %}
-            <!-- Fim Eventos da Semana -->
-        </div>
+            </div>
+        {% endfor %}
     </div>
 </section>
